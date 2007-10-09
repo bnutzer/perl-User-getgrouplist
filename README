@@ -1,0 +1,5 @@
+Copyright (C) 2007 Collax GmbH,
+(Bastian Friedrich <bastian.friedrich@collax.com>)
+
+Interface zur glibc-Funktion "getgrouplist". Zur Zeit Non-GPL.
+
