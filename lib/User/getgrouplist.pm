@@ -1,3 +1,5 @@
+# $Id: getgrouplist.pm,v 1.2 2007/10/09 08:48:42 bastian Exp $
+# Copyright (c) 2007 Collax GmbH
 package User::getgrouplist;
 
 use 5.006001;
