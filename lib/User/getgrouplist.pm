@@ -1,5 +1,5 @@
-# $Id: getgrouplist.pm,v 1.2 2007/10/09 08:48:42 bastian Exp $
-# Copyright (c) 2007 Collax GmbH
+# $Id: getgrouplist.pm,v 1.3 2009/10/20 08:06:41 bastian Exp $
+# Copyright (c) 2007-2009 Collax GmbH
 package User::getgrouplist;
 
 use 5.006001;
@@ -39,7 +39,7 @@ groups a user is in.
 
 =head1 Exports
 
-Function getgrouplist($username)
+Function C<getgrouplist($username)>
 
 =cut
 
