@@ -10,6 +10,8 @@
 
 MODULE = User::getgrouplist PACKAGE = User::getgrouplist
 
+PROTOTYPES: ENABLE
+
 AV *
 getgrouplist(username)
         const char *username
