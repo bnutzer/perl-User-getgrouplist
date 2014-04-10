@@ -48,7 +48,12 @@ getgrouplist(username)
 			}
 		}
 #else
+#if defined __CYGWIN__
+		/* Cygwin behaves differently than Linux -- will return count even if groups is NULL */
+		if (getgrouplist(username, pw->pw_gid, NULL, &count) > 0) {
+#else
 		if (getgrouplist(username, pw->pw_gid, NULL, &count) < 0) {
+#endif
 			groups = (gid_t *) malloc(count * sizeof (gid_t));
 			if (groups) {
 				getgrouplist(username, pw->pw_gid, groups, &count);
